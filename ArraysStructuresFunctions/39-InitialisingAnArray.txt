@@ -1,0 +1,15 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int number[5]={10,20,30,40,50};
+
+    //int number[5]={0}; //FOR INITIALISING AN ARRAY WITH ZERO
+    
+    for (int i=0; i<5; i++){
+        printf("Element %d = %d\n", i+1, number[i]);
+    }
+
+    return 0;
+}

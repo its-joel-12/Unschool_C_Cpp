@@ -1,0 +1,18 @@
+// C++IO-Functions
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int num, sqr;
+    
+    cout << "Enter a number: ";
+    cin >> num;
+    
+    sqr=num*num;
+    
+    cout << "Square: "<<sqr;
+    return 0;
+}
+

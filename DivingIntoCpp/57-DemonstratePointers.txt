@@ -1,0 +1,13 @@
+// DemonstratePointers
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int num=10;
+    int *ptr=&num;
+    cout<<"Num: "<<num;
+    cout<<"\nPointer: "<<ptr;
+    return 0;
+}

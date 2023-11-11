@@ -1,0 +1,78 @@
+// Task: Implementing Arrays and Structures
+
+#include <stdio.h>
+#include <string.h>
+
+struct employee{
+    char name[20];
+    char empID[10];
+    float exp;
+    float salary;
+}; 
+
+int main()
+{
+    struct employee e1,e2,e3,e4,e5;
+    
+    strcpy(e1.name, "Joel Oliveira");
+    strcpy(e1.empID, "EMP001");
+    e1.exp = 1;
+    e1.salary = 1000;
+
+    // Employee 2
+    strcpy(e2.name, "Emma Johnson");
+    strcpy(e2.empID, "EMP002");
+    e2.exp = 2.5;
+    e2.salary = 1500;
+
+    // Employee 3
+    strcpy(e3.name, "Alex Smith");
+    strcpy(e3.empID, "EMP003");
+    e3.exp = 3.5;
+    e3.salary = 2000;
+
+    // Employee 4
+    strcpy(e4.name, "Sophia Brown");
+    strcpy(e4.empID, "EMP004");
+    e4.exp = 1.8;
+    e4.salary = 1200;
+
+    // Employee 5
+    strcpy(e5.name, "Daniel White");
+    strcpy(e5.empID, "EMP005");
+    e5.exp = 4;
+    e5.salary = 2500;
+
+    // Printing employee information
+    printf("Employee 1\n");
+    printf("Name: %s\n", e1.name);
+    printf("ID: %s\n", e1.empID);
+    printf("Experience: %.2f year(s)\n", e1.exp);
+    printf("Salary: Rs.%.2f\n\n", e1.salary);
+
+    printf("Employee 2\n");
+    printf("Name: %s\n", e2.name);
+    printf("ID: %s\n", e2.empID);
+    printf("Experience: %.2f year(s)\n", e2.exp);
+    printf("Salary: Rs.%.2f\n\n", e2.salary);
+
+    printf("Employee 3\n");
+    printf("Name: %s\n", e3.name);
+    printf("ID: %s\n", e3.empID);
+    printf("Experience: %.2f year(s)\n", e3.exp);
+    printf("Salary: Rs.%.2f\n\n", e3.salary);
+
+    printf("Employee 4\n");
+    printf("Name: %s\n", e4.name);
+    printf("ID: %s\n", e4.empID);
+    printf("Experience: %.2f year(s)\n", e4.exp);
+    printf("Salary: Rs.%.2f\n\n", e4.salary);
+
+    printf("Employee 5\n");
+    printf("Name: %s\n", e5.name);
+    printf("ID: %s\n", e5.empID);
+    printf("Experience: %.2f year(s)\n", e5.exp);
+    printf("Salary: Rs.%.2f\n\n", e5.salary);
+    return 0;
+}
+

@@ -1,0 +1,46 @@
+// sorting an array
+#include <stdio.h>
+
+int main() {
+  int arr[6]={1,99,5,98,77,45}, i, j, temp;
+
+  printf("Unsorted array is:\n");
+  for(i=0; i<6; i++){
+    printf("%d\n",arr[i]);
+  }
+
+  // Code for ascending array sorting  
+  for(i=0; i<6; i++){
+    for(j=i+1; j<6; j++){
+      if(arr[i] > arr[j]){
+        temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
+    }  
+  }
+
+  printf("\nAscending sorted array is:\n");
+  for(i=0; i<6; i++){
+    printf("%d\n",arr[i]);
+  } 
+
+
+  // Code for descending array sorting  
+  for(i=0; i<6; i++){
+    for(j=i+1; j<6; j++){
+      if(arr[i] < arr[j]){
+        temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
+    }  
+  }
+  
+  printf("\nDescending sorted array is:\n");
+  for(i=0; i<6; i++){
+    printf("%d\n",arr[i]);
+  } 
+  
+  return 0;
+}

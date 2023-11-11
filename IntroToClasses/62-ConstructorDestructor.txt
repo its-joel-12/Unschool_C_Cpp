@@ -1,0 +1,32 @@
+// ConstructorDestructor
+// Obj.: Set value of a variable
+
+#include <iostream>
+using namespace std;
+
+class cls{
+    int number;
+
+public:
+    cls(){
+        cout<<"Value of number: "<<number;
+        cout<<"\nConstructor called!";
+        number=0;
+        cout<<"\nValue of number after constructor call: "<<number;
+    }
+    
+void get(){
+    number=10;
+    cout<<"\nValue of number after get(): "<<number;
+}
+
+~cls(){
+    cout<<"\nDestructor called!";
+}
+};
+
+int main(){
+    cls c1;
+    c1.get();
+    return 0;
+}

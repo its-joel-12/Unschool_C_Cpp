@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\joel oliveira\documents\unschool\adding two integers\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1615721721 source:c:\users\joel oliveira\documents\unschool\adding two integers\add two int.c
+	<stdio.h>
+

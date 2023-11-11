@@ -1,0 +1,28 @@
+// binary search
+#include <stdio.h>
+
+int main() {
+    int array[6]={1,5,7,9,12,99}, search = 12;
+    int low = 0, high = 5, mid = 0;
+    
+    while(low<=high){
+         mid = (low + high)/2;
+         
+         if(array[mid] == search){
+             printf("Element found at: %d", mid +1);
+             break;
+         }
+         else if(array[mid] < search){
+             low = mid+1;
+         }
+         else{
+             high = mid-1;
+         }
+    }
+    if (low > high){
+        printf("Element is not present in the array!");
+    }
+    
+    
+  return 0;
+}

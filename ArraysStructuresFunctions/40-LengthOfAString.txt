@@ -1,0 +1,19 @@
+// to calculate length of a string
+#include <stdio.h>
+
+int main() {
+  int i, len=0;
+  char string[]="My name is Joel Oliveira";
+
+  // \0 is the NULL character (last element of the array)
+// the above is only for the CHAR datatype
+
+  for (i=0; string[i] != '\0'; i++){
+    len++;
+  }
+
+  // printf("%s",string);  //to print the string
+  printf("Length of the string is: %d", len);
+  
+  return 0;
+}

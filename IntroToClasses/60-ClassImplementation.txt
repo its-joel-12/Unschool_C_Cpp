@@ -1,0 +1,27 @@
+// ClassImplementation
+// area of the rectangle using classes
+
+#include <iostream>
+using namespace std;
+
+class Rectangle{
+    float len, bre; //these members(var) are private by default
+    
+    public: //So a public getVal func is used to get the values assign for the private members 
+    void get_val(float x, float y){
+        len=x;
+        bre=y;
+    }
+    
+    void area(){
+        cout<<"Area: "<<len*bre;
+    }
+};
+
+int main()
+{
+    Rectangle rect1;
+    rect1.get_val(2,3);
+    rect1.area();
+   return 0;
+}

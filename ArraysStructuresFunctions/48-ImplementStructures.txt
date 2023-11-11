@@ -1,0 +1,37 @@
+// Implement Structures
+#include <stdio.h>
+#include <string.h>
+
+struct student{
+    char name[20];
+    char mail[20];
+    float marks[3];
+};
+
+int main() {
+    struct student s1;
+    int i;
+    
+    printf("Enter your name: ");
+    gets(s1.name);
+    
+    printf("\nEnter your E-mail: ");
+    gets(s1.mail);
+    
+    for (i=0; i<3; i++){
+        printf("\nEnter marks of sub_%d: ",i+1);
+        scanf("%f",&s1.marks[i]);
+    }
+    
+    printf("\n\n------REPORT CARD-----\n");
+    printf("Student Name: %s",s1.name);
+    printf("\nStudent E-mail: %s",s1.mail);
+    printf("\nMarks:-");
+    
+    for (i=0; i<3; i++){
+        printf("\nSubject_%d: %f",i+1, s1.marks[i]);
+    }
+    
+    printf("\n\n-----Thank You-----");
+  return 0;
+}
